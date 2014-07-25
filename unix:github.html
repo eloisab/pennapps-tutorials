@@ -115,7 +115,7 @@ ol.a {
           
       <h3>Respositories</h3>
           <p>A repository is where your code is stored on Github. You can make a repsoitory following <a href="https://help.github.com/articles/create-a-repo">these</a> instructions. You can also see instructions on how to commit a change from Github itself.</p>
-          <h4>How to Add Changes from Terminal</h4>
+          <h4>How to Add Changes Using Terminal</h4>
           <p>This assumes that you have setup a SSH keypair with your computer.</p>
           <ol class="a">
               <li>Go to your repsoitory on Github.</li>
@@ -123,8 +123,19 @@ ol.a {
               <li>Click on the clipboard icon.</li>
               <li>Go to terminal and change your directory to where you want to keep the repository.</li>
               <li>Now type <code>git clone</code>, then paste the SSH clone url, and press enter.</li>
-              <li></li>
+              <li>Move any files that you have created that you would like to be a part of this repository to this folder.</li>
+              <li>When all files are added, go back to terminal.</li>
+              <li>Type <code>git add .</code></li>
+              <li>Type <code>git commit -m "a message about what you will be pushing"</code></li>
+              <li>Type <code>git push</code>.</li>
           </ol>
+          <p>If you check your Github, you will see that the files have been updated and/or added.</p>
+          
+          <h3>Fork a Repsoitory</h3>
+            <p>Forking a respository is something you'll want to be able to do to collaborate with others on respositories. Github's instructions on forking a repository are <a href="https://help.github.com/articles/fork-a-repo">here</a>. <br> Their instructions also walk you through creating a <strong>branch</strong>. All files in a repository automatically end up in the <em>master</em> branch. However, if you would like to make some changes to the main code without damaging parts of the code that are working then you can create another branch and later merge it. When you're done making edits you can merge this other branch with the master branch again.</p>
+          
+          <h3>Webpage Hosting</h3>
+            <p>Webpage hosting is what actually puts your website on the internet. Many places offer hosting for a price but Github will host your webpage for free. You can see their instructions for hosting websites <a href="http://pages.github.com">here</a></p>
           
       </div>
 

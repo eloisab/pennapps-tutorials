@@ -41,6 +41,12 @@
 .en-markup-crop-options div div:first-of-type {
     margin-left: 0px !important;
 }
+    
+ol.a {
+    text-align: center;
+    list-style-position:inside;
+}
+    
 </style></head>
 
   <body>
@@ -73,51 +79,65 @@
     <div class="container">
 
       <div class="starter-template">
+        
+        <div>
+        <!-- BEGINNING of LESSON -->  
         <h1>HTML/CSS</h1>
         <p class="lead"> This section covers how to get started with HTML and CSS. At the end of this section you should be able to create a personal website.</p>
+          </div>
           
-          
+        <div>  
+        <!-- TROUBLESHOOTING -->  
         <h3>Troubleshooting Your Code</h3>
           <p>The interenet has a lot of helpful reasources to help you sort through problems with your code and learn new code. Three extremely helpful reasources are:</p> 
           <a href="http://www.codeacademy.com"><img src="./codeacademy.png"></a>
           <a href="http://www.bento.io"><img src="./bento.png">
           <a href="http://stackoverflow.com"><img src="./stackoverflow.png"></a>
         <p>You should try searching something on <a href="http://www.stackoverflow.com">Stack Overflow</a> now to familiarize yourself with the the sites setup.</p>
+              </div>
 
-              
+            <div>
+         <!-- HOW WEBSITES WORK -->     
          <h3>How Websites Work</h3>
-              <p>Websites work through a combination of three things: HTML, CSS, and Javascript. Javascript takes care of complicated tasks. We will cover it later. HTML essentially structures the webpage, and CSS styles it.</p>
+              <p>Websites typically work through a combination of three things: HTML, CSS, and Javascript. Javascript takes care of complicated tasks. We will cover it later. HTML structures the webpage, and CSS styles it.</p>
+            </div>
         
-              
-          <h3>HTML &mdash; HyperText Markup Language</h3>
+        <div>
+        <!-- HYPERTEXT MARKUP LANGUAGE -->      
+        <h3>HTML &mdash; HyperText Markup Language</h3>
                 <p>HyperText is text that will hyperlink you to other text.</p>
                 <img src="./hyperlink1.png">
-                <p>It is called a Markup Language because HTML is not written as plain text. It is <i>marked up</i> into the form of HTML elements called 'tags.' Tags are denoted by <code>&lt;</code> followed by <code>&gt;</code>.</p>
+                <p>It is called a Markup Language because HTML is not written as plain text. It is <em>marked up</em> into the form of HTML elements called 'tags.' Tags are denoted by <code>&lt;</code> followed by <code>&gt;</code>.</p>
                 <img src="./htmltags.png">
-          <h3>Brackets</h3>
+            </div>
+          
+            <div>
+         <!-- BRACKETS -->         
+         <h3>Brackets</h3>
               <p>Now we want to <a href="http://brackets.io/?lang=en">install</a> a program called Brackets. Brackets is a code editor for HTML with some really cool features.</p>
              <!-- <a href="http://brackets.io/?lang=en"><img src="./brackets.png"></a> -->
-              <p>One feature we really like about Brackets is the 'Live Development Feature.' Live development is enabled by clicking on the lightening bolt on the right side of your Brackets window. It will allow you to see the changes you are making to your HTML code as you make them in your preferred web browser.</p>
+              <p>One feature we really like about Brackets is the 'Live Development Feature.' Live development is enabled by clicking on the lightening bolt on the right side of your Brackets window. It will allow you to see the changes you are making to your HTML code as you make them as they would appear on the web.</p>
              <object width="560" height="315"><param name="movie" value="//www.youtube.com/v/Nhvj1NYC3Uc?hl=en_US&amp;version=3&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/Nhvj1NYC3Uc?hl=en_US&amp;version=3&amp;rel=0" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object><!-- YouTube Embed isn't working -->
-            <img src="./livedemo.png"> <!--this is blurry and off center -->
+            <img src="./livedemo.png">
+      </div>
+    
+       <div> 
+        <!-- INDEX -->
         <h4>index.html</h4>
-            <p>Brackets comes installed with a file called index.html. You should open that file now. This file has the basics for getting you started with HTML in Brackets. We are not going to walk through some of the important tags introduced in this file.</p>
+            <p>Brackets comes installed with a file called index.html. You should open that file now. This file has the basics for getting you started with HTML in Brackets. We are now going to walk through some of the important tags introduced in this file.   But you should also read through this file as it has many helpful tips for navigating Brackets.</p>
             <img src="./index1.png">
             <img src="./index2.png">
             <p>Under the <code>&lt;head&gt;</code> tag you can see tags for <code>&lt;link&gt;</code>. <code>&lt;link&gt;</code>, in general, links the HTML code to an outside source. In this case you can see that it links to an external CSS style sheet.</p>
             <img src="./index3.png">
             <p>The <code>&lt;body&gt;</code> element contains all of the contents of the HTML document including the text, hyperlinks, images, etc.</p>
             <img src="./index4.png">
-            <p>Headers go from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>. <code>&lt;h1&gt;</code> is the most important heading and <code>&lt;h6&gt;</code> is the least important heading.</p>
-    
+            <p>Headers go from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>. <code>&lt;h1&gt;</code> is the most important heading and <code>&lt;h6&gt;</code> is the least important heading.</p>    
             <img src="./index5.png">
-            <p>Commenting is when you would like to write a not to yourself or someone else that might read your code about what the code is actually doing. It does not affect how the output of the code.</p>
-    
-            <img src="./index6.png">
-            
+            <p>Commenting is when you would like to write a note to yourself or someone else that might read your code about what the code is actually doing. It does not affect the output of the code.</p>    
+            <img src="./index6.png">            
             <p>You can see from this file that all tags must be opened with <code>&lt;tag&gt;</code> and closed with <code>&lt;/tag&gt;</code>.</p>
-            <p>Other useful tags from this file are:</p>
-                <dl>
+            <p><strong>Other useful tags from this file are:</strong></p>
+                <ul style="list-style: none; ">
                     <li><code>&lt;kbd&gt;</code> &mdash; Keyboard Input</li>
                     <li><code>&lt;samp&gt;</code> &mdash; Sample Output from Computer Program</li>
                     <li><code>&lt;a&gt;</code> &mdash; Defines a hyperlink</li>
@@ -126,32 +146,45 @@
                     <li><code>&lt;strong&gt;</code> &mdash; Important Text</li>
                     <li><code>&lt;ul&gt;</code> &mdash; Bulleted List</li>
                     <li><code>&lt;li&gt;</code> &mdash; Defines List Item</li>
-                </dl>
-    
-
+                    <li><code>&lt;script&gt;</code> &mdash; The text written inside this element is not HTML. It is another type of script such as Javascript. It can also point to a different king of script file.</li>
+                    <li><code>&lt;div&gt;</code> &mdash; Defines a division in the HTML document</li>
+                    <li><code>&lt;style&gt;</code> &mdash; Define appearence of HTML document</li>
+                </ul>
+           </div>
+        
+        <div>
+        <!-- CASCADING SYTLE SHEETS -->
         <h3>CSS &mdash; Cascading Style Sheets</h3>
             <p>CSS desribes the look and formatting of a document written in a markup language (such as HTML). It's super easy to look up how to make certain appearences! If you Google "CSS backgroun-image linear gradient" and go to the <a href="http://www.w3schools.com/css/css3_gradients.asp">W3 Schools result</a>, it will show you the CSS code. W3 Schools is also an excellent reference for HTML tags.</p>
     
     <!--I think we need a lot more about CSS here. How to write it and such.-->
+        </div>
     
+        <div>
+        <!-- BOOTSTRAP -->
         <h3>Bootstrap</h3>
             <p>Bootsrap is a front end developer for webpages. It provides a helpful starting point for building a website. You should <a href="http://getbootstrap.com/">download</a> it now. Lots of cool and famous websites were built starting with Bootstrap. You can look at them <a href="http://expo.getbootstrap.com/">here</a>. Bootstrap provides code for a lot of website layouts. Go <a href="http://getbootstrap.com/getting-started/#examples">here</a> to see the examples.</p>  
-            <p>You get this code by:</p>
-                <ol>
+            <p><strong>You get this code by:</strong>
+                <ol class='a'>
                     <li>Clicking on an example that you like.</li>
                     <li>Right clicking on the page and going to 'save as.'</li>
                     <li>Saving the information as a .html film.</li>
-    </ol>
+    </ol></p>
             <p>This file can then be opened in Brackets, and you can edit it to what you want.</p>
+            </div>
 
+        <div>
+        <!-- DESIGN -->
         <h3>Design</h3>
             <!--This section also needs more information.-->
             <p>Some website designs that we like are: <a href="http://2014f.pennapps.com/">PennApps</a> and <a href="https://penncoursereview.com/">Penn Course Review</a>. If you like a feature on a certain website you can get the code for it by right-clicking on the feature and selecting 'Inspect Element.' You can also download the code for the website by following the same method we used on the Bootstrap examples.</p>
     
+        <!-- PERSONAL WEBSITE -->
         <h3>Personal Website</h3>
             <p>Everything you have just learned will enable you to build a personal website. <!-- Need Alex and Byrnn's examples --> Some fun ideas for things to put on your website are a <a href="http://designmodo.com/resume-cv-website-templates/">r&eacute;sum&eacute;</a> or widgets! <a href="https://developers.facebook.com/docs/plugins">Facebook</a>, <a href="https://dev.twitter.com/docs/embedded-timelines">Twitter</a>, and <a href="https://developers.google.com/maps/">Google Maps</a> all have fun widgets to play with.</p>
+            </div>
     
-        <img src="./pennapps.png">
+        <img src="./pennapps.png"> <!-- PennApps Logo -->
       </div>
 
 

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://getbootstrap.com/examples/starter-template/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+
+    <title>PennApps Tutorials</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://getbootstrap.com/examples/starter-template/starter-template.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="./javascript_files/ie-emulation-modes-warning.js"></script><style type="text/css"></style>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./javascript_files/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <style>[touch-action="none"]{ -ms-touch-action: none; touch-action: none; }[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }</style><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -90px !important;
+    width: 180px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+
+  <body data-pinterest-extension-installed="cr1.3.3">
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!--<a class="navbar-brand" href="">HTML/CSS</a>-->
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="">Home</a></li>
+            <li><a href="">HTML/CSS</a></li>
+            <li><a href="">Unix/Github</a></li>
+            <li class="active"><a href="">Javascript</a></li>
+            <li><a href="">Node</a></li>
+            <li><a href="">Tutorial Videos</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>Javascript</h1>
+        <p class="lead">This section covers how to get started with Javascript.</p>
+          
+        <h3>What is a program?</h3>
+          <p>A program is instructions that tell a computer what to do. It is similar to a book in that it is written in a specific language and is made up of words&mdash;or code.</p>
+          
+        <h3>Datatypes and Variables</h3>
+          <p>Datatypes are how data is classified. It determines what can be done with data. A variable is a value associated with a symbolic name. <br>ex. <code>var ten = 10;</code> <br>The variable in this case is <em>10</em>, the symbolic name is <em>ten</em>, and the datatype is <em>integer</em>.</p>
+          <h4>Examples of Datatypes:</h4>
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Integers</strong> &mdash; whole numbers <br> ex. 2 or 10249502</li>
+                <li class="list-group-item"><strong>Floating Point</strong> &mdash; Approximate real numbers <br> ex. &pi; or 1.205</li>
+                <li class="list-group-item"><strong>Strings</strong> &mdash; Sequence of characters <br> ex. "test" or "1234"</li>
+                <li class="list-group-item"><strong>Booleans</strong> &mdash; True and False <br><h5>Boolean Logic:</h5>
+                        <em>and</em> &mdash; true if both <samp>a</samp> and <samp>b</samp> are true, otherwise false
+                        <br><em>or</em> &mdash; true if either <samp>a</samp> or <samp>b</samp> is true (or both are true), otherwise false
+                        <br><em>not</em> &mdash; reverses the boolean
+                    </li>
+                <li class="list-group-item"><strong>Comparisons</strong> &mdash; Compares different data types, returns booleans <br>ex. <code>==</code> (equals) or <code>!=</code> (not equals)</li>
+          </ul>
+          
+          <h3>Conditionals</h3>
+            <p>Conditionals control the flow of the program. They go through the program as a <a href="http://morgan123.files.wordpress.com/2013/04/citrix-star-trek.pdf">decision tree</a>.</p>
+            <h4>If</h4>
+                <p>If boolean, in this case whether powerLevel is greater than 9000, is true then the code is executed.</p>
+                <code>if (powerLevel > 9000){ <br>
+                    var text = "It's over 9000!"; }   
+          </code>
+          <h4>If Else</h4>
+                <p>Gives code to execute if boolean is false.</p>
+                <code>if(time &lt; 20){ <br>
+                    text = "good job"; } <br>
+                    else{ <br>
+                      text = "too slow"; }  
+          </code>
+          <h4>While</h4>
+                <p>The code inside the loop executes continuously as long as boolean remains true.<br>The <code>++</code> adds one to the variable <code>i</code>.</p>
+                <code>var i = 0; <br>
+                    while(i &lt; 10){ <br>
+                    i++; } //executes 10 times
+          </code>
+          <h4>For</h4>
+                <p>You feed the loop an initial condition, a boolean operation, and then how the condition will be changed. The loop executes the code while the boolean remains true.</p>
+                <code>for(i=0;i&lt;5;i++){ <br>
+                    code; } //executes code five times
+          </code>
+          
+          <h3>Arrays</h3>
+            <p>An array is a table of values. The location of each value is called an index. The indices are labelled by integers, starting at 0.<br><img src="./array.png"><br>An array can be declared like this: <br><code>var cars = ["Saab","Volvo","BMW"];</code><br>or this:<br><code>var cars = new Array("Saab","Volvo","BMW");</code></p>
+          
+          <h3>Functions</h3>
+            <p>A function is a block of code designed o perform a specific task. Typically, it is given inputs with which it does some operation to determine the output.</p>
+            <code>function example(n1,n2){ <br>
+                    return n1 * n2; }//output of the function
+          </code>
+          
+          <h3>Objects</h3>
+            <p>Objects are data with customizable properties. <br><code>var Person = {name:"Brynn",age:21};</code><br><code>Person.name</code> returns "Brynn" and <code>Person.age</code> returns 21.</p>
+            
+      </div>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./javascript_files/jquery.min.js"></script>
+    <script src="./javascript_files/bootstrap.min.js"></script>
+  
+
+<span style="height: 20px; width: 40px; min-height: 20px; min-width: 40px; position: absolute; opacity: 0.85; z-index: 8675309; display: none; cursor: pointer; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAADU0lEQVR42s2WXUhTYRjHz0VEVPRFUGmtVEaFUZFhHxBhsotCU5JwBWEf1EWEEVHQx4UfFWYkFa2biPJiXbUta33OXFtuUXMzJ4bK3Nqay7m5NeZq6h/tPQ+xU20zugjOxR/+7/O8539+5znnwMtNTExwJtMb3L/fiLv3botCSmUjeCaejTOb39AiFothfHxcFIrHY8RksZjBsckJcOIRMfFsHD/SsbExUYpnI8DR0dGUGjSb0byhEJp5Uqg5CTSzc2CQleJbMEj9/ywBcGRkJEk9DQqouEVQT1sK444yWI9UonmTjGqauVLEIlHa9x8lAMbj8SSpp0rwKGMVvg8P46vbg0C7na8z8JsMcgHe7jlEa+edRhiLy8n/TUMfu6EvLElk+U0WtGwrTrdfAGQf5J8iiK4LVzDU28t8JtMSocf8E+l68myaNFXm/6rXslLK7ay5TOunuRvZWpJuvwAYjUaTpOIWoquuAZ219RTaxKYp9BbjycoN5FvL9qH9TBX5rvoGdJythvXYSTxdtRnWylO/ZdqrLsGwszzhWQ593z2KlAwCYCQSSZJ6ehZ0W7bD9VBLgN0NCqr3qR7R2rBrL3pu3Sb/7nDlz2uy6cG0OXk0GTbZXzNp8trsPAQdTj6frlWzN2DcXZGKQQAMh8NJ6rpyHe+PnkCr/CAFdZyvpfpjuvkifLF9wIt1Wwlo0OHie1RvWrKa93RjzfzliTzPKz3ltB0/Tevmwp14wGUgHAzSOoUEwFAolFaaBSuhnslPRkJexUJtZ6v5HtUeLswl33n1BgEY5fvhs9sJ3FAiT+QYyyvoAQJuD0KBAFRTJNAuz5/s3gJgMBhMJwrVFRThM5tY5zUF/A4X1f2fvQTRLCuBreoim0YmAbqNJryvPEXeeq46kaNdkQ/1HCncbJKPs9ZSv2VHGfWsZ2hfkhKAfr8/pdxWKx4wwD69PmVfNSOL+lr2w+gYqHpWDtXt1xQ8AMlWU0e1lqLd/APRHoP8AJqWrQG9gYxcPMsvSJUvAA4MDKTUJ7MZLaVy8v+qT21tcDx/OemePr0RTkNrur4A6PP5xCgBsL+/X4wiQDpuuVxOeL1eMYmYeDY6sOp0z+B0OuHxeEQhxkJMFosJiSO/UinOI/8Pc+l7KKArAT8AAAAASUVORK5CYII=);"></span></body></html>

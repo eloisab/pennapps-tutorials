@@ -77,7 +77,10 @@
         <p class="lead">This section covers how to get started with Javascript.</p>
           
         <h3>What is a program?</h3>
-          <p>A program is instructions that tell a computer what to do. It is similar to a book in that it is written in a specific language and is made up of words&mdash;or code.</p>
+          <p>A program is instructions that tell a computer what to do. It is similar to a book in that it is written in a specific language and is made up of words&mdash;or code. Javascript is a programming language. It has it's own unique syntax and is meant for a particular purpose. Javascript can be used to have user interaction on a website, build apps and games, access information on the internet, and organize and present data. Codecademy has a useful <a href="http://www.codecademy.com/glossary/javascript">glossary</a> for familiarizing yourself with JavaScript terms or if the explanantions here don't make sense to you.</p>
+          
+        <h3>Syntax</h3>
+          <p>Like other programming languages Javascript has a syntax that must be followed. For instance in HTML to comment a piece of code you use the syntax <code><!-- Followed By --></code>. In Javascript, however, you use the syntax <code>//</code> to denote a comment. In HTML you use <code><kbd></kbd></code> to get keyboard input. In Javascript you use <code>prompt();</code>.</p>    
           
         <h3>Datatypes and Variables</h3>
           <p>Datatypes are how data is classified. It determines what can be done with data. A variable is a value associated with a symbolic name. <br>ex. <code>var ten = 10;</code> <br>The variable in this case is <em>10</em>, the symbolic name is <em>ten</em>, and the datatype is <em>integer</em>.</p>
@@ -85,13 +88,20 @@
             <ul class="list-group">
                 <li class="list-group-item"><strong>Integers</strong> &mdash; whole numbers <br> ex. 2 or 10249502</li>
                 <li class="list-group-item"><strong>Floating Point</strong> &mdash; Approximate real numbers <br> ex. &pi; or 1.205</li>
-                <li class="list-group-item"><strong>Strings</strong> &mdash; Sequence of characters <br> ex. "test" or "1234"</li>
+                <li class="list-group-item"><strong>Strings</strong> &mdash; Sequence of characters, the syntax for them is to surround them in quotations <br> ex. "test" or "1234"</li>
                 <li class="list-group-item"><strong>Booleans</strong> &mdash; True and False <br><h5>Boolean Logic:</h5>
                         <em>and</em> &mdash; true if both <samp>a</samp> and <samp>b</samp> are true, otherwise false
                         <br><em>or</em> &mdash; true if either <samp>a</samp> or <samp>b</samp> is true (or both are true), otherwise false
                         <br><em>not</em> &mdash; reverses the boolean
                     </li>
-                <li class="list-group-item"><strong>Comparisons</strong> &mdash; Compares different data types, returns booleans <br>ex. <code>==</code> (equals) or <code>!=</code> (not equals)</li>
+                <li class="list-group-item"><strong>Comparisons</strong> &mdash; Compares different data types, returns booleans <br><h5>Comparison Operators Are:</h5> 
+                    <em>Equals</em> &mdash; <code>===</code>
+                    <em><strong>Not</strong> Equals</em><code>!=</code>
+                    <em>Greater than</em> &mdash; <code>&gt;</code>
+                    <em>Less than</em> &mdash; <code>&lt;</code>
+                    <em>Less than or Equal to</em> &mdash; <code>&lt;=</code>
+                    <em>Greater than or Equal to</em> &mdash; <code>&gt;=</code>
+                </li>
           </ul>
           
           <h3>Conditionals</h3>
@@ -124,13 +134,18 @@
             <p>An array is a table of values. The location of each value is called an index. The indices are labelled by integers, starting at 0.<br><img src="./array.png"><br>An array can be declared like this: <br><code>var cars = ["Saab","Volvo","BMW"];</code><br>or this:<br><code>var cars = new Array("Saab","Volvo","BMW");</code></p>
           
           <h3>Functions</h3>
-            <p>A function is a block of code designed o perform a specific task. Typically, it is given inputs with which it does some operation to determine the output.</p>
-            <code>function example(n1,n2){ <br>
+            <p>A function is a block of code designed to perform a specific task. Typically, it is given inputs with which it does some operation to determine the output.</p>
+            <code>function nameOfFunction(n1,n2){ <br>
                     return n1 * n2; }//output of the function
+          </code> 
+          <h5>Here is some code that might make more sense:</h5>
+            <code>function greet(name){ <br>
+                    return "Hello" + name + "!";
           </code>
           
           <h3>Objects</h3>
             <p>Objects are data with customizable properties. <br><code>var Person = {name:"Brynn",age:21};</code><br><code>Person.name</code> returns "Brynn" and <code>Person.age</code> returns 21.</p>
+          
             
       </div>
 

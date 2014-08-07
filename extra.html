@@ -64,13 +64,13 @@ ol.a {
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="./index.html">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
             <li><a href="./html:css.html">HTML/CSS</a></li>
             <li><a href="./unix:github.html">Unix/Github</a></li>
             <li><a href="./javascript.html">Javascript</a></li>
             <li><a href="./construction.html">Node</a></li>
             <li><a href="./construction.html">Databases</a></li>
-            <li><a href="./extra.html">Extra</a></li>
+            <li class="active"><a href="./extra.html">Extra</a></li>
             <li><a href="./tutorial-videos.html">Tutorial Videos</a></li>
             <li><a href="./construction.html">Contact</a></li>
           </ul>
@@ -81,15 +81,51 @@ ol.a {
     <div class="container">
 
       <div class="starter-template">
-        <h1>PennApps Web App Tutorials</h1>
-        <p>Welcome to the website for our tutorial series! In the navigation bar you'll see a list of tutorials/topics. Each page steps through the information we presented in our lessons. Enjoy, and let us know if you have questions!</p>
-
-        <p>Wonderful website created by Eloisa Baez Jones, <br>with help from tutorial teachers Brynn Claypoole and Alex Hu.</p>
+        
+        <div>
+        <!-- BEGINNING of LESSON -->  
+        <h1>Extra Lessons</h1>
+        <p class="lead"> This section covers additional topics explained in the last tutorial session.</p>
+          </div>
           
-          <img src="./pennapps.png"> <!-- PennApps Logo -->
-          <br>
-         <a href="https://twitter.com/PennApps" class="twitter-follow-button" data-show-count="false">Follow @PennApps</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> <br>
-          <a href="http://facebook.com/pennapps">Facebook</a>
-    </div></div>
+        <div>  
+        <!-- Facebook API -->  
+        <h3>Facebook API</h3>
+          <p>To use the Facebook API, you first need to get set up with a Facebook Developer account. On your normal homepage, go to the bottom of the navigation bar on the left side. There should be a "DEVELOPER" section. If you already have an account, click "Manage Apps".</p>
+          
+          <p>Otherwise, put your cursor over the word "DEVELOPER", and click the word "More" that appears to the right. You should see a bar titled "Become a Facebook Developer". Hit the green "Register Now" button, then agree to the terms and click "Register" in the popup.</p>
+
+          <p>Once you have an account, create a new app by selecting the "Create a New App" option on the "App" dropdown located on the top menu. In the popup, name your app and click "Create App".</p>
+
+          <p>If you want to incorporate a login button, check out the guide <a href="https://developers.facebook.com/docs/facebook-login/login-flow-for-web/v2.1">here</a>. You can just copy the code from the "Quickstart" and insert it into your own app. You'll also likely need to fix a security issue: On the left side of the app browser on Facebook, select "Settings", then "Advanced", and fill in "Valid OAuth redirect URIs" with "localhost:5000". You should now be able to run your Node app locally and log in to Facebook!</p>
+              </div>
+
+            <div>
+         <!-- HOW WEBSITES WORK -->     
+         <h3>jQuery</h3>
+              <p>jQuery is a Javascript library that simplifies a lot of functions people often want to perform with their websites. You can download version 1.11 from the <a href="http://jquery.com/download/">jQuery website</a> ("Download the compressed, production jQuery 1.11.1").</p>
+
+              <p>jQuery makes it easier to change the HTML on your page via Javascript. The dollar sign ($) represents the jQuery library, so you can use it to perform jQuery functions. Here's a sample:</p>
+
+              <p>$(document).ready(function(){</p>
+            <p>  $("h2").text("Welcome, friend.");</p>
+            <p>});</p>
+            <p>The first line allows you to perform some function after the entire HTML page has loaded. This is the safest way to use jQuery, since it frequently relies on the HTML code (the "document") to perform some function. This code updates the code within the first h2 tag it sees in the document with "Welcome, friend."</p>
+            </div>
+        
+        <div>
+        <img src="./pennapps.png"> <!-- PennApps Logo -->
+      </div>
+
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./html:css_files/jquery.min.js"></script>
+    <script src="./html:css_files/bootstrap.min.js"></script>
+  
+
 </body></html>
